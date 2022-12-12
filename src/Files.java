@@ -43,9 +43,9 @@ public class Files {
         try {
             //If the file does not exist it will be created
             if(myFile.createNewFile()){
-                System.out.println("file already created");
+                System.out.println("file created");
             }else{
-                System.out.println("file exists");
+                System.out.println("file already exists");
             }
         }catch(IOException e){
             System.out.println("NOPE!");
@@ -61,7 +61,7 @@ public class Files {
             FileWriter myWriter = new FileWriter(fileName,true);
             myWriter.write("Minecraft 2 \n");
             myWriter.close();
-            System.out.println("I have written to file");
+            System.out.println("I have written to the file");
         }catch (IOException e){
             System.out.println("NO WRITING!");
             e.printStackTrace();
